@@ -1,0 +1,16 @@
+@mixin flex-center($type: 'all') {
+  display: flex;
+
+  @if $type == 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type == 'hor' {
+    justify-content: center;
+  } @else if $type == 'ver' {
+    align-items: center;
+  } @else if $type == 'bet' {
+    justify-content: space-between;
+  } @else if $type == 'end' {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,30 @@
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+	text-align: center;
+	
+	& span {
+		position: relative;
+		color: #fff;
+		animation-name: drop;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-play-state: running;
+	}
+}
+
+@keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}

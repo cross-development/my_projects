@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+
+	.calltoaction {
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 34px;
+		letter-spacing: 3px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin: 0 0 30px;
+		letter-spacing: 3px;
+	}
+
+}
+
+@media screen and (max-width: 30.6em) { 
+
+	.cbp-qtrotator {
+		font-size: 70%;
+	}
+
+	.cbp-qtrotator img {
+		width: 80px;
+	}
+
+}

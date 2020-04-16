@@ -1,0 +1,14 @@
+.calltoaction-btn {
+    text-align: center;
+    
+    & > .btn {
+        background: rgba(255, 255, 255, .8);
+        color: #111;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    & > .btn:hover {
+        background: #fff;
+    }
+}

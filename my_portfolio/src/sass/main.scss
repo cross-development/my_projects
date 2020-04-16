@@ -1,0 +1,81 @@
+// Base style
+@import './base.scss';
+
+
+// ---------- HELPERS ---------- //
+// Helpers: bootstrap, fonts and animate style
+@import './helpers/total-fonts';
+@import './helpers/bootstrap';
+@import './helpers/font-awesome';
+@import './helpers/simple-line-icons';
+@import './helpers/animate';
+// Helpers: transition and reset style
+@import './helpers/transition';
+@import './helpers/reset-box-shadow';
+@import './helpers/typography';
+@import './helpers/reset-border-radius';
+
+
+// ---------- COMPOMENTS ---------- //
+// Inputs styles
+@import './components/input/input-group';
+@import './components/input/form-control';
+@import './components/input/input-lg';
+@import './components/input/input-sm';
+@import './components/input/textarea';
+// Button style
+@import './components/button/btn';
+@import './components/button/btn-lg';
+@import './components/button/btn-sm';
+@import './components/button/btn-xs';
+// General Styles
+@import './components/general/pfblock';
+@import './components/general/pfblock-gray';
+@import './components/general/pfblock-image';
+@import './components/general/pfblock-header';
+@import './components/general/pfblock-header-left';
+@import './components/general/pfblock-title';
+@import './components/general/pfblock-subtitle';
+@import './components/general/pfblock-subtitle';
+@import './components/general/pfblock-line';
+@import './components/general/pfblock-icon';
+@import './components/general/calltoaction';
+@import './components/general/calltoaction-decription';
+@import './components/general/calltoaction-btn';
+@import './components/general/long-down';
+// Home Section Styles
+@import './components/home/home';
+@import './components/home/home-overlay';
+@import './components/home/intro';
+@import './components/home/start';
+// Service Section Styles
+@import './components/servise/iconbox';
+@import './components/servise/iconbox-icon';
+@import './components/servise/iconbox-title';
+// Skills Section Styles
+@import './components/skills/chart';
+@import './components/skills/percent';
+// Contact Section Styles
+@import './components/contact/ajax-response';
+// Footer Section Styles
+@import './components/footer/footer';
+@import './components/footer/copyright';
+@import './components/footer/social-links';
+// Navigation Styles
+@import './components/navigation/header';
+@import './components/navigation/navbar-custom';
+// Scroll Styles (to top / to down)
+@import './components/scroll/scroll-up';
+@import './components/scroll/scroll-down';
+// Preloader Styles
+@import './components/preloader/preloader';
+@import './components/preloader/status';
+// Portfolio Common style
+@import './components/portfolio/grid';
+// Bubba style
+@import './components/bubba/effect-bubba';
+// Quote Rotator Style
+@import './components/quote/cbp-qtrotator.scss';
+// Media query
+@import './components/media/media';
+// TODO: возможно стоит перенести медиа в соответствующие компонетны...

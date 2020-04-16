@@ -1,0 +1,192 @@
+ @font-face {
+    font-family: Acrom-bold; /* Имя шрифта */
+    src: url(../fonts/acrom800.otf); /* Путь к файлу со шрифтом */
+ }
+@font-face {
+    font-family: Acrom;
+    src: url(../fonts/acrom400.otf);
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Acrom;
+}
+
+.wrap {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+	min-height: 450px;
+	background: url('../images/header_bg.png'); /*фон*/
+	background-size: cover;
+}
+
+.top-line {
+	height: 85px;
+	background: rgba(3,4,5, .5);
+	padding: 40px 0;
+}
+
+.phone {
+	color: #fff;
+	font-size: 23px;
+	font-family: Acrom;
+	float: right;
+}
+
+.callback {
+	font-family: Acrom;
+	font-size: 9px;
+	color: #fff;
+	background: none;
+	border: 2px solid #018dc4;
+	border-radius: 10px;
+	padding: 5px 10px;
+	float: right;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+h1 {
+	font-size: 37px;
+	color: #fff;
+	font-family: Acrom-bold;
+	margin-bottom: 40px;
+}
+
+h2 {
+	color: #00a9ea;
+	font-size: 19px;
+	margin-bottom: 80px;
+}
+
+.main {
+	text-align: center;
+	padding: 90px 0 130px 0;
+}
+
+.register {
+	color: #fff;
+	font-family: Acrom-bold;
+	font-size: 10px;
+	background: #ee6e22;
+	border-radius: 10px;
+	border: none;
+	padding: 15px 10px;
+	text-transform: uppercase;
+}
+
+.callback2 {
+	float: none;
+}
+
+.callback2 img{
+	width: 16px;
+}
+
+.callback span {
+	position: relative;
+	top: -4px;
+}
+
+.divider {
+	height: 80px;
+	background: #ee6e22;
+}
+
+.program {
+	padding: 70px 0;
+	background: #fff;
+}
+
+.right {
+	width: 500px;
+	float: right;
+}
+
+h3 {
+	color: #231f20;
+	font-size: 42px;
+	font-family: Acrom-bold;
+	margin-bottom: 45px;
+}
+
+ul li {
+	color: #00aaeb;
+	font-size: 24px;
+	font-family: Acrom-bold;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.comment-img {
+	border-radius: 100%;
+	position: relative;
+	left: 50px;
+	top: 50px;
+}
+
+.comment {
+	background: url(../images/bg_2.png);
+	background-size: cover;
+	padding: 80px 0 120px 0;
+	/*position: relative;
+	left: 40px;
+	top: 40px;*/
+}
+
+.comment h3 {
+	color: #00a9ea;
+	font-size: 35px;
+	font-family: Acrom-bold;
+}
+
+.comment p {
+	color: #fff;
+	font-size: 19px;
+}
+
+.clear {
+	clear: both;
+}
+
+footer{
+	background: url(../images/bg_3.png);
+	background-size: cover;
+	padding: 100px 0;
+	color: #fff;
+}
+.col-3 {
+	width: 33.333%;
+	float: left;
+}
+
+.callback3 {
+	font-family: Acrom;
+	font-size: 9px;
+	color: #fff;
+	background: none;
+	border: 2px solid #018dc4;
+	border-radius: 6px;
+	padding: 5px 10px;
+	/*margin-left: 40px;*/
+	width: 150px;
+}
+
+footer label {
+	display: inline-block;
+	width: 100px;
+}
+
+footer p {
+	margin-bottom: 20px;
+}

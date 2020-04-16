@@ -1,0 +1,13 @@
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	transform: translate(0%, -50%);
+	padding: 0 15px;
+
+	& h1 {
+		font-weight: 800;
+	}
+}

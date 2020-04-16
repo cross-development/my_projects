@@ -1,0 +1,11 @@
+#footer {
+	background: #222;
+	text-align: center;
+	padding: 40px 0;
+	color: #FFF;
+
+	& span {
+		animation-iteration-count: infinite;
+		color: #ff5252;
+	}
+}

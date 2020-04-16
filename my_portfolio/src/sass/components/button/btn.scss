@@ -1,0 +1,23 @@
+.btn {
+	font-family: Raleway, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 8px 26px;
+	border: 0;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		outline: inherit !important;
+	}
+
+	& .icon-before {
+		margin-right: 6px;
+	}
+
+	& .icon-after {
+		margin-left: 6px;
+	}
+}

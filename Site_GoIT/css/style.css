@@ -1,0 +1,211 @@
+ @font-face {
+    font-family: Acrom-bold; /* Имя и тип (жирный) шрифта */
+    src: url(../fonts/acrom800.otf); /* Путь к файлу со шрифтом */
+ }
+@font-face {
+    font-family: Acrom; /* Имя и тип шрифта */
+    src: url(../fonts/acrom400.otf);
+}
+
+* {
+	margin: 0; /*нулевой отступ со всех сторон*/
+}
+
+body {
+	font-family: Acrom; /* Имя и тип шрифта */
+}
+
+.header {
+	min-height: 450px;
+	background: url('../images/header_bg.png'); /* фон, в качестве фона передана картинка */
+	background-size: cover; /* убирает повторение картинки (cover - покрыть) */
+}
+
+.wrap {
+	width: 1024px; /*ширина блока*/
+	margin: 0 auto; /* отступ справа и слева автоматически одинаковый, а сверху и снизу - 0 */ 
+}
+
+.top-line {
+	height: 85px; /*высота блока*/
+	background: rgba(3,4,5, 0.5); /*фон, цвета ргба (р,г,б, прозрачность)*/
+	padding: 40px 0; /*внутренние поля - сверху и снизу 20 пкс, сверху и снизу - 0пкс*/
+}
+
+.phone {
+	color: #fff; /*цвет текста*/
+	font-size: 23px; /*размер текста*/
+	font-family: Acrom; /*шрифт текста*/
+	float: right; /*положение объекта - справа*/
+}
+
+.callback {
+	font-family: Acrom; /*шрифт текста*/
+	font-size: 9px; /*размер текста*/
+	color: #fff; /*цвет текста*/
+	background:  none; /*фон кнопки - отсутствует*/
+	border: 2px solid #0180b2; /*толщина границы,залитый цвет,сам цвет*/
+	border-radius: 10px; /*радиус углов*/
+	padding: 10px 5px; /*внутренние отступы сверху - 10 сверху и снизу, 5 справа и слева*/
+	float: right; /*положение объекта - справа*/
+	margin-top: 25px; /*отступ сверху*/
+	margin-left: 20px; /*отступ слева*/
+	text-decoration: none; /*убрать выделение текста как ссылки*/
+	outline: none;
+	cursor: pointer;
+}
+
+.logo {
+	margin-top: 20px; /*отступ сверху*/
+}
+
+.phone a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	width: 300px;
+}
+
+h1 {
+	font-size: 37px; /*размер щрифта*/
+	color: #fff; /*цвет шрифта*/
+	font-family: Acrom-bold; /*имя и тим (жирный) шрифта*/
+	margin-bottom: 40px; /*отступ снизу*/
+}
+
+h2 {
+	color: #00a9ea; /*цвет шрифта*/
+	font-size: 19px; /*размер щрифта*/
+	margin-bottom: 80px; /*отступ снизу*/
+}
+
+.main {
+	text-align: center; /*позиционирование текста - центр*/
+	padding: 90px 0 130px 0; /*отступы во внутри - сверху справа снизу слева*/
+}
+
+.register {
+	color: #fff; /*цвет шрифта*/
+	font-family: Acrom-bold;/*имя и тип (жирный) шрифта*/
+	font-size: 10px; /*размер шрифта*/
+	background: #ee6e22; /*цвет заливки*/
+	border: none; /*граница кнопки - отсутствуют*/
+	padding: 15px 10px; /*внутренние отступы сверху - 10 сверху и снизу, 20 справа и слева*/
+	text-decoration: none; /*убрать выделени текста как ссылки*/
+	text-transform: uppercase; /*трансформация текста - все буквы заглавные*/
+	border-radius: 15px; /*радиус округлений блока*/
+	outline: none;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto 40px; 
+}
+.callback2 {
+	float: none; /*положение объекта - нет (стандартное)*/
+	border-radius: 50px; /*радиус округлений блока*/
+	display: inline-block;
+	width: 150px; /*ширина блока*/
+	margin-top: 0px; /*отступ сверху*/
+	margin-left: 0px; /*отступ слева*/
+}
+	
+.callback2 img {
+	width: 16px; /*ширина блока*/
+	margin-right: 20px; /*отступ справа*/
+}
+
+.callback span {
+	position: relative; /*позиционирование*/
+	top: -3px; /*отступ текста сверху*/
+}
+
+.divider {
+	height: 80px; /*высота блока*/
+	background: #ee6e22; /*заливка блока*/
+}
+
+.program {
+	padding: 70px 0; /*внутренние отступы сверху - 70 сверху и снизу, 0 справа и слева*/
+	background: #fff; /*заливка (фон)*/
+}
+
+.right {
+	width: 500px; /*ширина блока*/
+	float: right; /*Определяет, по какой стороне будет выравниваться элемент*/
+}
+
+h3 {
+	color: #231f20; /*цвет текста*/
+	font-size: 42px; /*размер шрифта*/
+	font-family: Acrom-bold; /*имя и тип шрифта*/
+	margin-bottom: 45px; /*отступ снизу*/
+}
+
+ul li {
+	color: #00aaeb; /*цвет текста*/
+	font-size: 24px;/*размер шрифта*/
+	font-family: Acrom-bold; /*имя и тип шрифта*/
+	margin-bottom: 15px; /*отступ снизу*/
+	text-transform: uppercase; /*трансформация текста - все буквы заглавные*/
+}
+
+.comment-img {
+	border-radius: 150px;
+	position: relative;
+	left: 50px;
+	top: 10px;
+}
+
+.comment {
+	background: url(../images/bg_2.png);
+	background-size: cover;
+	padding: 160px 0 160px 0;
+}
+
+.comment h3 {
+	color: #00a9ea;
+	font-size: 35px;
+	font-family: Acrom-bold;
+}
+
+.comment p {
+	color: #fff;
+	font-size: 19px;
+}
+
+.clear {
+	clear: both;
+}
+
+footer {
+	background: url(../images/bg_3.png);
+	background-size: cover;
+	padding: 100px 0;
+	color: #fff;
+}
+
+.col-3 {
+	width: 33.333%;
+	float: left;
+}
+
+.callback3 {
+	font-family: Acrom; /*шрифт текста*/
+	font-size: 9px; /*размер текста*/
+	color: #fff; /*цвет текста*/
+	background:  none; /*фон кнопки - отсутствует*/
+	border: 2px solid #0180b2; /*толщина границы,залитый цвет,сам цвет*/
+	border-radius: 10px; /*радиус углов*/
+	padding: 10px 5px; /*внутренние отступы сверху - 10 сверху и снизу, 5 справа и слева*/
+	outline: none;
+	display: inline-block;
+	width: 200px;
+}
+
+footer label {
+	display: inline-block;
+	width: 100px;
+}
+
+footer p {
+	margin-bottom: 20px;
+}

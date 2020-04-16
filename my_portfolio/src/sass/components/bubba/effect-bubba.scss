@@ -1,0 +1,62 @@
+figure.effect-bubba {
+	background: #000;
+
+	& img {
+		opacity: 0.7;
+		transition: opacity 0.35s;
+	}
+
+	&:hover img {
+		opacity: 0.4;
+	}
+
+	& figcaption::before,
+	& figcaption::after {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 30px;
+		left: 30px;
+		content: '';
+		opacity: 0;
+		transition: opacity 0.35s, transform 0.35s;
+	}
+
+	& figcaption::before {
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		transform: scale(0,1);
+	}
+	
+	& figcaption::after {
+		border-right: 1px solid #fff;
+		border-left: 1px solid #fff;
+		transform: scale(1,0);
+	}
+	
+	& h2 {
+		padding-top: 10%;
+		transition: transform 0.35s;
+		transform: translate3d(0,-20px,0);
+		color: #fff;
+	}
+	
+	& p {
+		padding: 20px 2.5em;
+		opacity: 0;
+		transition: opacity 0.35s, transform 0.35s;
+		transform: translate3d(0,20px,0);
+	}
+	
+	&:hover figcaption::before,
+	&:hover figcaption::after {
+		opacity: 1;
+		transform: scale(1);
+	}
+	
+	&:hover h2,
+	&:hover p {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+}
