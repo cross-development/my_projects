@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <title>Authorization form</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="/" class="home-page">
+                    <img src="./img/logo.png" alt="UkrAgroCom">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="dws-wrapper">
+        <div class="dws-form">
+            <label class="tab active" title="Вкладка 1">Авторизация</label>
+            <label class="tab" title="Вкладка 2">Регистрация</label>
+
+            <form id="form-1" class="tab-form active" action="#">
+                <div class="box-input">
+                    <input class="input" type="text" required>
+                    <label>Введите E-mail</label>
+                </div>
+
+                <div class="box-input">
+                    <input class="input" type="password" required>
+                    <label>Введите пароль</label>
+                </div>
+
+                <a href="#" class="button">Войти</a>
+                <ul class="social">
+                    <li><a href="#" class="fa fa-facebook-square"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                    <li><a href="#" class="fa fa-twitter-square"></a></li>
+                    <li><a href="#" class="fa fa-github-square"></a></li>
+                </ul>
+                <a href="#">Я забыл(-а) свой E-mail или пароль</a>
+            </form>
+
+            <form id="form-2" class="tab-form" action="#">
+
+                <div class="box-input">
+                    <input class="input" type="text" required>
+                    <label>Введите E-mail</label>
+                </div>
+
+                <div class="box-input">
+                    <input class="input" type="text" required>
+                    <label>Введите свое имя</label>
+                </div>
+
+                <div class="box-input">
+                    <input class="input" type="password" required>
+                    <label>Введите пароль</label>
+                </div>
+
+                <a href="#" class="button">Регистрация</a>
+                <div class="recover">
+                    <input type="checkbox">
+                    <label>Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

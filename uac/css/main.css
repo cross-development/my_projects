@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background-image: url("../img/DJI_0008.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+}
+
+header {
+  background: rgb(255, 255, 255, 0.7);
+  height: 70px;
+  width: auto;
+}
+
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7ц);
+}
+.logo img {
+  width: 10%;
+  max-width: 100%;
+}
+.dws-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.dws-form {
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 330px;
+}
+#form-1,
+#form-2 {
+  height: 300px;
+}
+.dws-form a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #3c3c90;
+}
+.dws-form a:hover {
+  color: #000000;
+}
+.dws-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dws-form input {
+  display: block;
+  width: 100%;
+}
+.tab-form {
+  background-color: #fff;
+  display: none;
+  padding: 30px 20px 20px;
+}
+.tab-form.active {
+  display: block;
+}
+label.tab {
+  color: #000000;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+label.tab.active {
+  background-color: #fff;
+  color: #342371;
+}
+
+/*Формы*/
+.input {
+  font-size: 16px;
+  border: 2px solid #e9eaea;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  color: #29a61e;
+  outline: none;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+  color: #c4c9c9;
+}
+::-moz-placeholder {
+  color: #298cad;
+}
+:-moz-placeholder {
+  color: #298cad;
+}
+:-ms-input-placeholder {
+  color: #298cad;
+}
+
+a.button {
+  background: #76c682;
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  line-height: 46px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+#form-1 a.button {
+  margin-top: 90px;
+}
+a.button:hover {
+  background: #0c5d18;
+  color: #ffffff;
+  transition: 0.7s;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.social a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+.social + a {
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.box-input {
+  position: relative;
+}
+.box-input input {
+  border: none;
+  border-bottom: 2px solid #e9eaea;
+  padding: 10px 0;
+}
+.box-input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  color: #c4c9c9;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.box-input input:focus ~ label,
+.box-input input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #2f2f51;
+}
+
+.del {
+  display: none;
+}
