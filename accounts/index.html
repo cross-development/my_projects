@@ -12,7 +12,7 @@
     <main class="main">
         <section class="company-section">
             <h2>Поиск по идентификаторам предприятия:</h2>
-            <form action="#" class="company-search-form">
+            <form action="#" class="company-search-form" autocomplete="off">
                 <label for="company-name">Наименование предприятия</label>
                 <input type="text" name="companyName" id="company-name" class="company-name">
                 <label for="company-usreou">Код ОКПО предприятия</label>
@@ -23,7 +23,7 @@
 
         <section class="bank-section">
             <h2>Поиск по идентификаторам банка:</h2>
-            <form action="#" class="bank-search-form">
+            <form action="#" class="bank-search-form" autocomplete="off">
                 <label for="bank-name">Наименование банка</label>
                 <input type="text" name="bankName" id="bank-name" class="bank-name">
                 <label for="bank-mfi">Код МФО банка</label>
@@ -34,7 +34,7 @@
 
         <section class="account-section">
             <h2>Поиск по номеру счета в формате IBAN:</h2>
-            <form action="#" class="account-search-form">
+            <form action="#" class="account-search-form" autocomplete="off">
                 <label for="account-number">Номер банковского счета</label>
                 <input type="text" name="accountNumber" id="account-number" class="account-number">
                 <button class="account-search-button" data-action="clear_and_render" type="submit">Поиск</button>
