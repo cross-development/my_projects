@@ -1,0 +1,313 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font: 14px/1.4 Roboto, Serif;
+	padding: 10px;
+}
+
+section:not(:first-child) {
+	margin: 20px 0;
+}
+
+form {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+	margin-bottom: 4px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Georgia, Serif;
+	line-height: 22px;
+}
+
+label {
+	display: inline-block;
+	font-size: 18px;
+	width: 25%;
+}
+
+input {
+	width: 60%;
+	display: inline-block;
+	margin: 6px;
+	padding: 1px;
+}
+
+.company-search-button,
+.bank-search-button,
+.account-search-button {
+	padding: 2px 15px;
+	border: 1.5px solid #2c3a47;
+	background: #dfe6e9;
+	border-radius: 6px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75);
+}
+
+.company-search-button:hover,
+.bank-search-button:hover,
+.account-search-button:hover {
+	background: #2c3a47;
+	color: #fff;
+}
+/* 
+	Generic Styling, for Desktops/Laptops 
+*/
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+	background: #eee;
+}
+th {
+	background: #333;
+	color: white;
+	font-weight: bold;
+}
+td,
+th {
+	padding: 4px 10px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+
+td:last-child {
+	text-align: center;
+	/* width: 6%; */
+}
+
+th p {
+	margin-left: 30px;
+}
+
+/*
+	Modal-window style
+*/
+.modal-button {
+	font-size: 1em;
+	margin: 0 auto;
+	padding: 1px 10px;
+	color: #000;
+	font-size: 1em;
+	border: 1.5px solid #2c3a47;
+	border-radius: 6px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.3s linear;
+}
+
+.modal-button:hover {
+	background: #2c3a47;
+	color: #fff;
+}
+
+.overlay {
+	position: fixed;
+	overflow-y: scroll;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 50px auto;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+	width: 55%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+
+.content h3 {
+	margin: 26px 0 10px;
+	color: #000;
+	font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.popup .close:hover {
+	color: #a4b0be;
+}
+
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+@media screen and (max-width: 760px) {
+	.box {
+		width: 70%;
+	}
+
+	.popup {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px) {
+	/* Force table to not be like tables anymore */
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr {
+		border: 1px solid #ccc;
+	}
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		/* padding-left: 0%; */
+		font-size: 12px;
+	}
+
+	/* td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	} */
+
+	th p {
+		margin-left: 16px;
+	}
+
+	/*
+		Label the data
+	*/
+	/* td:nth-of-type(1):before {
+		content: 'First Name';
+	}
+	td:nth-of-type(2):before {
+		content: 'Last Name';
+	}
+	td:nth-of-type(3):before {
+		content: 'Job Title';
+	}
+	td:nth-of-type(4):before {
+		content: 'Favorite Color';
+	}
+	td:nth-of-type(5):before {
+		content: 'Wars of Trek?';
+	}
+	td:nth-of-type(6):before {
+		content: 'Porn Name';
+	}
+	td:nth-of-type(7):before {
+		content: 'Date of Birth';
+	}
+	td:nth-of-type(8):before {
+		content: 'Dream Vacation City';
+	}
+	td:nth-of-type(9):before {
+		content: 'GPA';
+	}
+	td:nth-of-type(10):before {
+		content: 'Arbitrary Data';
+	} */
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	body {
+		margin: 0;
+		width: 320px;
+	}
+
+	th {
+		font-weight: normal;
+	}
+
+	form {
+		width: 100%;
+		display: block;
+	}
+
+	h2 {
+		font-size: 10px;
+		text-align: center;
+		margin: 0;
+	}
+
+	label {
+		display: block;
+		width: 100%;
+		margin: 0 auto 2px;
+		font-size: 14px;
+	}
+
+	input {
+		width: 100%;
+		margin: 2px auto;
+	}
+
+	.company-search-button,
+	.bank-search-button,
+	.account-search-button {
+		margin: 10px auto 0;
+		font-weight: bold;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	body {
+		width: 495px;
+	}
+}
