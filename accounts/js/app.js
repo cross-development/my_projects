@@ -1,116 +1,84 @@
 'use strict';
-//! Переписать html и скрипт, чтобы в html была одна форма со всеми инпутами, 
-//! а в js на ней был один обработчик submit и общая функция обработки данных
+
 import accounts from './accounts.js';
 
 const refs = {
-	companyForm: document.querySelector('.company-search-form'),
-	bankForm: document.querySelector('.bank-search-form'),
-	accountForm: document.querySelector('.account-search-form'),
-	accountTable: document.querySelector('.account-table'),
-	// accountTableHead: document.querySelector('thead'),
+	searchForm: document.querySelector('.search-form'),
+	accountTableHead: document.querySelector('thead'),
 };
 
 // Вешаем обработчик событий на submit формы, вызываем функцию сбора данных из input и фильтрация accounts по value инпутов
-refs.companyForm.addEventListener('submit', e => {
-	const resultOfSearchByCompanyInform = handleCompanyFormSubmit(e, accounts);
-	renderData(resultOfSearchByCompanyInform, refs.accountTable);
-});
-refs.bankForm.addEventListener('submit', e => {
-	const resultOfSearchByBankInform = handleBankFormSubmit(e, accounts);
-	renderData(resultOfSearchByBankInform, refs.accountTable);
-});
-refs.accountForm.addEventListener('submit', e => {
-	const resultOfSearchByAccountInform = handleAccountFormSubmit(e, accounts);
-	renderData(resultOfSearchByAccountInform, refs.accountTable);
+refs.searchForm.addEventListener('submit', e => {
+	const resultOfSearchByInformation = handleFormSubmit(e, accounts);
+	renderData(resultOfSearchByInformation, refs.accountTableHead);
 });
 
 // Рендер отфильтрованных данных в таблицу (желательно с очисткой предыдущих данных таблицы без нарушения структуры DOM)
 function renderData(dataToRender, targetToRender) {
 	const markup = createTableRows(dataToRender);
-	targetToRender.insertAdjacentHTML('beforeend', markup);
-	// targetToRender.firstElementChild.nextElementSibling.remove();
+
+	if (!markup) {
+		return;
+	}
+
+	targetToRender.insertAdjacentHTML('afterend', markup);
+	targetToRender.parentNode.lastElementChild.remove();
 }
+
 // Функция сбора данных с инпутов формы "Предприятие", их фильтрация и возврат.
 // Если не находит данные, возвращает пустой массив для "поддержки штанов" программы
-function handleCompanyFormSubmit(e, dataArray) {
+function handleFormSubmit(e, dataArray) {
 	e.preventDefault();
 
 	const { elements } = e.currentTarget;
 	const companyName = elements.companyName;
 	const companyUsreou = elements.companyUsreou;
+	const bankName = elements.bankName;
+	const bankMfi = elements.bankMfi;
+	const accountNumber = elements.accountNumber;
 
-	const companyData = {
+	const objData = {
 		[companyName.name]: companyName.value,
 		[companyUsreou.name]: companyUsreou.value,
+		[bankName.name]: bankName.value,
+		[bankMfi.name]: bankMfi.value,
+		[accountNumber.name]: accountNumber.value,
 	};
 
-	if (companyData.companyName !== '') {
+	if (objData.companyName !== '') {
 		const resultOfSearchByCompanyName = dataArray.filter(data =>
-			data.companyName.toLowerCase().includes(companyData.companyName.toLowerCase()),
+			data.companyName.toLowerCase().includes(objData.companyName.toLowerCase()),
 		);
 		return resultOfSearchByCompanyName;
 	}
 
-	if (companyData.companyUsreou !== '') {
+	if (objData.companyUsreou !== '') {
 		const resultOfSearchByCompanyUsreou = dataArray.filter(
-			data => data.companyUsreou === companyData.companyUsreou,
+			data => data.companyUsreou === objData.companyUsreou,
 		);
 		return resultOfSearchByCompanyUsreou;
 	}
 
-	// return [];
-}
-
-// Функция сбора данных с инпутов формы "Банк", их фильтрация и возврат.
-// Если не находит данные, возвращает пустой массив для "поддержки штанов" программы
-function handleBankFormSubmit(e, dataArray) {
-	e.preventDefault();
-
-	const { elements } = e.currentTarget;
-	const bankName = elements.bankName;
-	const bankMfi = elements.bankMfi;
-
-	const bankData = {
-		[bankName.name]: bankName.value,
-		[bankMfi.name]: bankMfi.value,
-	};
-
-	if (bankData.bankName !== '') {
+	if (objData.bankName !== '') {
 		const resultOfSearchByBankName = dataArray.filter(data =>
-			data.bankName.toLowerCase().includes(bankData.bankName.toLowerCase()),
+			data.bankName.toLowerCase().includes(objData.bankName.toLowerCase()),
 		);
 		return resultOfSearchByBankName;
 	}
 
-	if (bankData.bankMfi !== '') {
-		const resultOfSearchByBankMfi = dataArray.filter(data => data.bankMfi === bankData.bankMfi);
+	if (objData.bankMfi !== '') {
+		const resultOfSearchByBankMfi = dataArray.filter(data => data.bankMfi === objData.bankMfi);
 		return resultOfSearchByBankMfi;
 	}
 
-	// return [];
-}
-
-// Функция сбора данных с инпутов формы "Счета", их фильтрация и возврат.
-// Если не находит данные, возвращает пустой массив для "поддержки штанов" программы
-function handleAccountFormSubmit(e, dataArray) {
-	e.preventDefault();
-
-	const { elements } = e.currentTarget;
-	const accountNumber = elements.accountNumber;
-
-	const accountData = {
-		[accountNumber.name]: accountNumber.value,
-	};
-
-	if (accountData.accountNumber !== '') {
+	if (objData.accountNumber !== '') {
 		const resultOfSearchByAccountNumber = dataArray.filter(data =>
-			data.companyAccount.includes(accountData.accountNumber),
+			data.companyAccount.includes(objData.accountNumber),
 		);
 		return resultOfSearchByAccountNumber;
 	}
 
-	// return [];
+	return [];
 }
 
 // Функция создания разметки таблицы по шаблону одной строки. Получает отфильтрованный массив данных
@@ -123,7 +91,7 @@ function createTableRows(dataArray) {
 function createTableRowMarkup(data, idx) {
 	const row = `
     <tr>
-        <td>${1 + idx}</td>
+        <td>${idx + 1}</td>
         <td>${data.companyName}</td>
         <td>${data.companyUsreou}</td>
         <td>${data.bankName}</td>
@@ -131,34 +99,34 @@ function createTableRowMarkup(data, idx) {
         <td>${data.accountCurrency}</td>
         <td>${data.companyAccount}</td>
         <td>
-            <a class="modal-button" href="#popup-id">Еще...</a>
-                <div id="popup-id" class="overlay">
+            <a class="modal-button" href="#popup-id-${idx + 1}">Детально</a>
+                <div id="popup-id-${idx + 1}" class="overlay">
                     <div class="popup">
                         <a class="close" href="#">&times;</a>
                     <div class="content">
-                        <h3>Информация о предприятии</h3>
+                        <h3>Інформація про підприємство</h3>
                         <table>
                             <tr>
-                                <th>Название компании:</th>
+                                <th>Назва підприємства:</th>
                                 <td>${data.companyName}</td>
                             </tr>
                             <tr>
-                                <th>Код ОКПО:</th>
+                                <th>Код ЄДРПОУ:</th>
                                 <td>${data.companyUsreou}</td>
                             </tr>
                             <tr>
-                                <th>Адрес:</th>
+                                <th>Адреса:</th>
                                 <td></td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Индекс:</p>
+                                    <p>Індекс:</p>
                                 </th>
                                 <td>${data.companyAddress.postalCode}</td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Страна:</p>
+                                    <p>Країна:</p>
                                 </th>
                                 <td>${data.companyAddress.country}</td>
                             </tr>
@@ -176,68 +144,68 @@ function createTableRowMarkup(data, idx) {
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Населенный пункт:</p>
+                                    <p>Населений пункт:</p>
                                 </th>
                                 <td>${data.companyAddress.city}</td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Улица:</p>
+                                    <p>Вулиця:</p>
                                 </th>
                                 <td>${data.companyAddress.streetAddress}</td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Номер дома:</p>
+                                    <p>Номер будинку:</p>
                                 </th>
                                 <td>${data.companyAddress.numberHouse}</td>
                             </tr>
                             <tr>
-                                <th>Должность руководителя:</th>
+                                <th>Посада керівника:</th>
                                 <td>${data.headPosition}</td>
                             </tr>
                             <tr>
-                                <th>ФИО руководителя:</th>
+                                <th>ПІБ керівника:</th>
                                 <td>${data.fullName}</td>
                             </tr>
                         </table>
-                        <h3>Информация об обслуживающем банке</h3>
+                        <h3>Інформація про обслуговуючий банк</h3>
                         <table>
                             <tr>
-                                <th>Название банка:</th>
+                                <th>Назва банку:</th>
                                 <td>${data.bankName}</td>
                             </tr>
                             <tr>
-                                <th>Код ОКПО банка:</th>
+                                <th>Код ЄДРПОУ банку:</th>
                                 <td>${data.bankUsreou}</td>
                             </tr>
                             <tr>
-                                <th>Код МФО банка:</th>
+                                <th>Код МФО банку:</th>
                                 <td>${data.bankMfi}</td>
                             </tr>
                             <tr>
-                                <th>SWIFT банка:</th>
+                                <th>SWIFT банку:</th>
                                 <td>${data.bankSwift}</td>
                             </tr>
                             <tr>
-                                <th>Информация о текущем счете:</th>
+                                <th>Інформація про поточні рахунки:</th>
                                 <td></td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Валюта счета:</p>
+                                    <p>Валюта рахунку:</p>
                                 </th>
                                 <td>${data.accountCurrency}</td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>Номер счета (IBAN):</p>
+                                    <p>Номер рахунку (IBAN):</p>
                                 </th>
                                 <td>${data.companyAccount}</td>
                             </tr>
                             <tr>
                                 <th>
-                                    <p>SWIFT банка-корреспондента:</p>
+                                    <p>SWIFT банку-кореспондента:</p>
                                 </th>
                                 <td>${data.correspondentBankSwift}</td>
                             </tr>
@@ -248,7 +216,7 @@ function createTableRowMarkup(data, idx) {
                                 <td>${data.correspondentBank}</td>
                             </tr>
                             <tr>
-                                <th>Адрес головного банка:</th>
+                                <th>Адреса головного банку:</th>
                                 <td>${data._id}</td>
                             </tr>
                         </table>

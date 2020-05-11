@@ -10,50 +10,39 @@
 
 <body>
     <main class="main">
-        <section class="company-section">
-            <h2>Поиск по идентификаторам предприятия:</h2>
-            <form action="#" class="company-search-form" autocomplete="off">
-                <label for="company-name">Наименование предприятия</label>
+        <section class="company-bank-section">
+            <h1>Виберіть один із критеріїв пошуку</h1>
+            <form action="#" class="search-form" autocomplete="off">
+                <h2>Пошук по ідентифікаторам підприємства:</h2>
+                <label for="company-name">Назва підприємства</label>
                 <input type="text" name="companyName" id="company-name" class="company-name">
-                <label for="company-usreou">Код ОКПО предприятия</label>
+                <label for="company-usreou">Код ЄДРПОУ підприємства</label>
                 <input type="text" name="companyUsreou" id="company-usreou" class="company-usreou">
-                <button class="company-search-button" data-action="clear_and_render" type="submit">Поиск</button>
-            </form>
-        </section>
-
-        <section class="bank-section">
-            <h2>Поиск по идентификаторам банка:</h2>
-            <form action="#" class="bank-search-form" autocomplete="off">
-                <label for="bank-name">Наименование банка</label>
+                <h2>Пошук по ідентифікаторам банку:</h2>
+                <label for="bank-name">Найменування банку</label>
                 <input type="text" name="bankName" id="bank-name" class="bank-name">
-                <label for="bank-mfi">Код МФО банка</label>
+                <label for="bank-mfi">Код МФО банку</label>
                 <input type="text" name="bankMfi" id="bank-mfi" class="bank-mfi">
-                <button class="bank-search-button" data-action="clear_and_render" type="submit">Поиск</button>
-            </form>
-        </section>
-
-        <section class="account-section">
-            <h2>Поиск по номеру счета в формате IBAN:</h2>
-            <form action="#" class="account-search-form" autocomplete="off">
-                <label for="account-number">Номер банковского счета</label>
+                <h2>Пошук по номеру рахунка в форматі IBAN:</h2>
+                <label for="account-number">Номер банківського рахунку</label>
                 <input type="text" name="accountNumber" id="account-number" class="account-number">
-                <button class="account-search-button" data-action="clear_and_render" type="submit">Поиск</button>
+                <button class="search-button" data-action="submit" type="submit">Пошук</button>
             </form>
         </section>
 
         <section class="account-information-section">
-            <h2>Информация о наличии текущих счетов на предприятии</h2>
+            <h2>Інформація про наявність поточних рахунків підприємства</h2>
             <table class="account-table">
                 <thead>
                     <tr>
-                        <th>№п/п</th>
-                        <th>Название компании</th>
-                        <th>Код ОКПО</th>
-                        <th>Название банка</th>
+                        <th>№з/п</th>
+                        <th>Назва підприємства</th>
+                        <th>Код ЄДРПОУ</th>
+                        <th>Назва банку</th>
                         <th>Код МФО</th>
                         <th>Валюта</th>
-                        <th>Номер счета</th>
-                        <th>Прочее</th>
+                        <th>Номер рахунку</th>
+                        <th>Інше</th>
                     </tr>
                 </thead>
                 <tbody></tbody>

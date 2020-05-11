@@ -5,11 +5,15 @@
 }
 body {
 	font: 14px/1.4 Roboto, Serif;
-	padding: 10px;
+	padding: 0 10px 10px;
 }
 
-section:not(:first-child) {
-	margin: 20px 0;
+.account-information-section {
+	margin-top: 30px;
+}
+
+.account-information-section > h2 {
+	padding-bottom: 10px;
 }
 
 form {
@@ -17,19 +21,32 @@ form {
 	border-radius: 5px;
 	padding: 10px;
 	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+	margin: 0 auto;
 	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+	background: #f9fafa;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-family: Georgia, Serif;
+	line-height: 22px;
+	font-size: 22px;
+	margin: 10px auto 15px;
 }
 
 h2 {
-	margin-bottom: 4px;
+	margin-top: 5px;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: bold;
 	font-family: Georgia, Serif;
 	line-height: 22px;
+}
+
+h2:not(:first-child) {
+	margin-top: 20px;
 }
 
 label {
@@ -39,32 +56,31 @@ label {
 }
 
 input {
-	width: 60%;
+	width: 70%;
 	display: inline-block;
-	margin: 6px;
+	margin: 6px 10px;
 	padding: 1px;
 }
 
-.company-search-button,
-.bank-search-button,
-.account-search-button {
-	padding: 2px 15px;
+.search-button {
+	height: 28px;
+	width: 150px;
+	font-size: 14px;
 	border: 1.5px solid #2c3a47;
 	background: #dfe6e9;
 	border-radius: 6px;
 	text-transform: uppercase;
 	cursor: pointer;
-	transition: all 0.3s linear;
+	transition: all 0.2s linear;
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto 5px;
 	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75);
 }
 
-.company-search-button:hover,
-.bank-search-button:hover,
-.account-search-button:hover {
-	background: #2c3a47;
+.search-button:hover {
+	background: #636e72;
 	color: #fff;
+	box-shadow: none;
 }
 /* 
 	Generic Styling, for Desktops/Laptops 
@@ -104,7 +120,7 @@ th p {
 .modal-button {
 	font-size: 1em;
 	margin: 0 auto;
-	padding: 1px 10px;
+	padding: 1px 6px;
 	color: #000;
 	font-size: 1em;
 	border: 1.5px solid #2c3a47;
@@ -138,7 +154,7 @@ th p {
 }
 
 .popup {
-	margin: 50px auto;
+	margin: 15px auto 0;
 	padding: 10px;
 	background: #fff;
 	border-radius: 5px;
@@ -148,7 +164,7 @@ th p {
 }
 
 .content h3 {
-	margin: 26px 0 10px;
+	margin: 12px 0 5px;
 	color: #000;
 	font-family: Tahoma, Arial, sans-serif;
 }
