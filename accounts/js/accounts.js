@@ -1,6 +1,6 @@
 export default [
 	{
-		_id: 'id-461198',
+		_id: 'id-344081',
 		companyCode: 'C01',
 		companyName: 'ООО Ромашка',
 		companyUsreou: '12345678',
@@ -24,9 +24,10 @@ export default [
 		currencyCode: 980,
 		correspondentBankSwift: 'none',
 		correspondentBank: 'none',
+		bankAdress: '01030, Київ, вул. Богдана Хмельницького, 16-22',
 	},
 	{
-		_id: 'id-579190',
+		_id: 'id-78286',
 		companyCode: 'C01',
 		companyName: 'ООО Ромашка',
 		companyUsreou: '12345678',
@@ -51,9 +52,10 @@ export default [
 		correspondentBankSwift: 'CHASUS33',
 		correspondentBank:
 			'J.P. Morgan Chase Bank, New York 270 Park Avenue, New York, NY, 10017 USA, New York',
+		bankAdress: '01030, Київ, вул. Богдана Хмельницького, 16-22',
 	},
 	{
-		_id: 'id-771415',
+		_id: 'id-98298',
 		companyCode: 'C01',
 		companyName: 'ООО Ромашка',
 		companyUsreou: '12345678',
@@ -78,9 +80,10 @@ export default [
 		correspondentBankSwift: 'COBADEFF',
 		correspondentBank:
 			'Commerzbank AG Neue Mainzer Strasse 32-36, 60261 Frankfurt Am Main,  Germany',
+		bankAdress: '01030, Київ, вул. Богдана Хмельницького, 16-22',
 	},
 	{
-		_id: 'id-979431',
+		_id: 'id-919239',
 		companyCode: 'C01',
 		companyName: 'ООО Ромашка',
 		companyUsreou: '12345678',
@@ -104,9 +107,10 @@ export default [
 		currencyCode: 980,
 		correspondentBankSwift: 'none',
 		correspondentBank: 'none',
+		bankAdress: '65059, Одеса, вул. Краснова, 6/1',
 	},
 	{
-		_id: 'id-840559',
+		_id: 'id-482214',
 		companyCode: 'C01',
 		companyName: 'ООО Ромашка',
 		companyUsreou: '12345678',
@@ -130,9 +134,10 @@ export default [
 		currencyCode: 840,
 		correspondentBankSwift: 'IRVTUS3N',
 		correspondentBank: 'THE BANK OF NEW YORK MELLON** New York',
+		bankAdress: '65059, Одеса, вул. Краснова, 6/1',
 	},
 	{
-		_id: 'id-532365',
+		_id: 'id-18546',
 		companyCode: 'C01',
 		companyName: 'ООО Ромашка',
 		companyUsreou: '12345678',
@@ -156,9 +161,10 @@ export default [
 		currencyCode: 978,
 		correspondentBankSwift: 'COBADEFF',
 		correspondentBank: 'Commerzbank AG, Kaiserplatz, D-60261 Frankfurt am Main, Germany ',
+		bankAdress: '65059, Одеса, вул. Краснова, 6/1',
 	},
 	{
-		_id: 'id-41487',
+		_id: 'id-592308',
 		companyCode: 'C02',
 		companyName: 'ООО Рога и копыта',
 		companyUsreou: '87654321',
@@ -182,9 +188,10 @@ export default [
 		currencyCode: 980,
 		correspondentBankSwift: 'none',
 		correspondentBank: 'none',
+		bankAdress: '01030, Київ, вул. Богдана Хмельницького, 16-22',
 	},
 	{
-		_id: 'id-813335',
+		_id: 'id-621457',
 		companyCode: 'C02',
 		companyName: 'ООО Рога и копыта',
 		companyUsreou: '87654321',
@@ -209,9 +216,10 @@ export default [
 		correspondentBankSwift: 'CHASUS33',
 		correspondentBank:
 			'J.P. Morgan Chase Bank, New York 270 Park Avenue, New York, NY, 10017 USA, New York',
+		bankAdress: '01030, Київ, вул. Богдана Хмельницького, 16-22',
 	},
 	{
-		_id: 'id-73200',
+		_id: 'id-858788',
 		companyCode: 'C02',
 		companyName: 'ООО Рога и копыта',
 		companyUsreou: '87654321',
@@ -236,9 +244,10 @@ export default [
 		correspondentBankSwift: 'COBADEFF',
 		correspondentBank:
 			'Commerzbank AG Neue Mainzer Strasse 32-36, 60261 Frankfurt Am Main,  Germany',
+		bankAdress: '01030, Київ, вул. Богдана Хмельницького, 16-22',
 	},
 	{
-		_id: 'id-84532',
+		_id: 'id-576208',
 		companyCode: 'C02',
 		companyName: 'ООО Рога и копыта',
 		companyUsreou: '87654321',
@@ -262,9 +271,10 @@ export default [
 		currencyCode: 980,
 		correspondentBankSwift: 'none',
 		correspondentBank: 'none',
+		bankAdress: '49094, Дніпро, вул. Набережна Перемоги, 30',
 	},
 	{
-		_id: 'id-513213',
+		_id: 'id-800773',
 		companyCode: 'C02',
 		companyName: 'ООО Рога и копыта',
 		companyUsreou: '87654321',
@@ -289,9 +299,10 @@ export default [
 		correspondentBankSwift: 'CHASUS33',
 		correspondentBank:
 			'J.P. Morgan Chase Bank, New York 270 Park Avenue, New York, NY, 10017 USA, New York',
+		bankAdress: '49094, Дніпро, вул. Набережна Перемоги, 30',
 	},
 	{
-		_id: 'id-734771',
+		_id: 'id-937414',
 		companyCode: 'C02',
 		companyName: 'ООО Рога и копыта',
 		companyUsreou: '87654321',
@@ -316,5 +327,6 @@ export default [
 		correspondentBankSwift: 'COBADEFF',
 		correspondentBank:
 			'Commerzbank AG Neue Mainzer Strasse 32-36, 60261 Frankfurt Am Main,  Germany',
+		bankAdress: '49094, Дніпро, вул. Набережна Перемоги, 30',
 	},
 ];

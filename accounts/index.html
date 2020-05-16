@@ -13,19 +13,25 @@
         <section class="company-bank-section">
             <h1>Виберіть один із критеріїв пошуку</h1>
             <form action="#" class="search-form" autocomplete="off">
-                <h2>Пошук по ідентифікаторам підприємства:</h2>
-                <label for="company-name">Назва підприємства</label>
-                <input type="text" name="companyName" id="company-name" class="company-name">
-                <label for="company-usreou">Код ЄДРПОУ підприємства</label>
-                <input type="text" name="companyUsreou" id="company-usreou" class="company-usreou">
-                <h2>Пошук по ідентифікаторам банку:</h2>
-                <label for="bank-name">Найменування банку</label>
-                <input type="text" name="bankName" id="bank-name" class="bank-name">
-                <label for="bank-mfi">Код МФО банку</label>
-                <input type="text" name="bankMfi" id="bank-mfi" class="bank-mfi">
-                <h2>Пошук по номеру рахунка в форматі IBAN:</h2>
-                <label for="account-number">Номер банківського рахунку</label>
-                <input type="text" name="accountNumber" id="account-number" class="account-number">
+                <div class="company">
+                    <h2>Пошук по ідентифікаторам підприємства:</h2>
+                    <label for="company-name">Назва підприємства</label>
+                    <input type="text" name="companyName" id="company-name" class="company-name">
+                    <label for="company-usreou">Код ЄДРПОУ підприємства</label>
+                    <input type="text" name="companyUsreou" id="company-usreou" class="company-usreou">
+                </div>
+                <div class="bank">
+                    <h2>Пошук по ідентифікаторам банку:</h2>
+                    <label for="bank-name">Найменування банку</label>
+                    <input type="text" name="bankName" id="bank-name" class="bank-name">
+                    <label for="bank-mfi">Код МФО банку</label>
+                    <input type="text" name="bankMfi" id="bank-mfi" class="bank-mfi">
+                </div>
+                <div class="account">
+                    <h2>Пошук по номеру рахунка (IBAN):</h2>
+                    <label for="account-number">Номер банківського рахунку</label>
+                    <input type="text" name="accountNumber" id="account-number" class="account-number">
+                </div>
                 <button class="search-button" data-action="submit" type="submit">Пошук</button>
             </form>
         </section>
@@ -34,7 +40,7 @@
             <h2>Інформація про наявність поточних рахунків підприємства</h2>
             <table class="account-table">
                 <thead>
-                    <tr>
+                    <tr class="table-heading">
                         <th>№з/п</th>
                         <th>Назва підприємства</th>
                         <th>Код ЄДРПОУ</th>
