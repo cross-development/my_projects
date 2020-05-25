@@ -12,6 +12,7 @@ const refs = {
 refs.searchForm.addEventListener('submit', e => {
 	const resultOfSearchByInformation = handleFormSubmit(e, accounts);
 	renderData(resultOfSearchByInformation, refs.accountTableHead);
+	e.currentTarget.reset();
 });
 
 // Рендер отфильтрованных данных в таблицу (желательно с очисткой предыдущих данных таблицы без нарушения структуры DOM)
@@ -50,7 +51,6 @@ function handleFormSubmit(e, dataArray) {
 		const resultOfSearchByCompanyName = dataArray.filter(data =>
 			data.companyName.toLowerCase().includes(objData.companyName.toLowerCase()),
 		);
-		companyName.value = '';
 
 		return resultOfSearchByCompanyName;
 	}
@@ -59,7 +59,6 @@ function handleFormSubmit(e, dataArray) {
 		const resultOfSearchByCompanyUsreou = dataArray.filter(
 			data => data.companyUsreou === objData.companyUsreou,
 		);
-		companyUsreou.value = '';
 
 		return resultOfSearchByCompanyUsreou;
 	}
@@ -68,14 +67,12 @@ function handleFormSubmit(e, dataArray) {
 		const resultOfSearchByBankName = dataArray.filter(data =>
 			data.bankName.toLowerCase().includes(objData.bankName.toLowerCase()),
 		);
-		bankName.value = '';
 
 		return resultOfSearchByBankName;
 	}
 
 	if (objData.bankMfi !== '') {
 		const resultOfSearchByBankMfi = dataArray.filter(data => data.bankMfi === objData.bankMfi);
-		bankMfi.value = '';
 
 		return resultOfSearchByBankMfi;
 	}
@@ -84,7 +81,6 @@ function handleFormSubmit(e, dataArray) {
 		const resultOfSearchByAccountNumber = dataArray.filter(data =>
 			data.companyAccount.includes(objData.accountNumber),
 		);
-		accountNumber.value = '';
 
 		return resultOfSearchByAccountNumber;
 	}
