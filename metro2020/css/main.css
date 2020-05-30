@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  padding: 6px 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #4b4a4a;
+}
+
+.logo-wrapper {
+  width: 20%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  flex: 0 0 60%;
+  margin-bottom: 5px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 0 60%;
+}
+
+label {
+  width: 40%;
+}
+
+input {
+  width: 60%;
+  margin: 1px 0;
+}
+
+.button {
+  display: block;
+  margin: 0 20px;
+  padding: 5px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #33b560;
+  cursor: pointer;
+  border: none;
+}
+
+main {
+}
+
+.metro-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.map-wrapper {
+  position: relative;
+}
+
+.map {
+  width: 96vh;
+}
+
+.map-legend {
+  width: 20%;
+  height: auto;
+}
+
+.station {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+}
+
+#akademmystechko {
+  top: 55px;
+  left: 84px;
+}
+
+#zhytomyrska {
+  top: 94px;
+  left: 84px;
+}
+
+#svyatoshyn {
+  top: 130px;
+  left: 84px;
+}
+
+#nyvky {
+  top: 184px;
+  left: 102px;
+}
+
+#beresteyska {
+  top: 218px;
+  left: 136px;
+}
+
+#shulyavska {
+  top: 240px;
+  left: 160px;
+}
+
+#polytechnic {
+  top: 274px;
+  left: 193px;
+}
+
+#vokzalna {
+  top: 288px;
+  left: 246px;
+}
+
+#university {
+  top: 288px;
+  left: 300px;
+}
+
+#teatralna {
+  top: 288px;
+  left: 354px;
+}
+
+#khreschatik {
+  top: 288px;
+  left: 422px;
+}
+
+#arsenalna {
+  top: 317px;
+  left: 494px;
+}
+
+#dnipro {
+  top: 341px;
+  left: 518px;
+}
+
+#hydropark {
+  top: 357px;
+  left: 554px;
+}
+
+#livoberezhna {
+  top: 353px;
+  left: 602px;
+}
+
+#darnitsa {
+  top: 330px;
+  left: 632px;
+}
+
+#chernigivska {
+  top: 304px;
+  left: 658px;
+}
+
+#lisova {
+  top: 278px;
+  left: 682px;
+}

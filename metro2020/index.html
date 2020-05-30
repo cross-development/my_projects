@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="./img/metro-logo.png" alt="metro logo" class="logo">
+        </div>
+        <form id="form" class="form">
+            <div class="input-wrapper">
+                <label for="current_station">Введите начальную станцию</label>
+                <input type="text" name="current_station" id="current_station">
+                <label for="next_station">Введите конечную станцию</label>
+                <input type="text" name="next_station" id="next_station">
+
+                <label class="output">Время в пути: <span>0</span> минут</label>
+            </div>
+
+            <button type="submit" class="button">Поиск</button>
+        </form>
+    </header>
+
+    <main>
+        <div class="metro-map">
+            <div class="map-wrapper">
+                <img src="./img/metro-map.png" alt="map" class="map">
+
+                <input type="checkbox" name="station" id="akademmystechko" class="station red-line">
+                <input type="checkbox" name="station" id="zhytomyrska" class="station red-line">
+                <input type="checkbox" name="station" id="svyatoshyn" class="station red-line">
+                <input type="checkbox" name="station" id="nyvky" class="station red-line">
+                <input type="checkbox" name="station" id="beresteyska" class="station red-line">
+                <input type="checkbox" name="station" id="shulyavska" class="station red-line">
+                <input type="checkbox" name="station" id="polytechnic" class="station red-line">
+                <input type="checkbox" name="station" id="vokzalna" class="station red-line">
+                <input type="checkbox" name="station" id="university" class="station red-line">
+                <input type="checkbox" name="station" id="teatralna" class="station red-line">
+                <input type="checkbox" name="station" id="khreschatik" class="station red-line">
+                <input type="checkbox" name="station" id="arsenalna" class="station red-line">
+                <input type="checkbox" name="station" id="dnipro" class="station red-line">
+                <input type="checkbox" name="station" id="hydropark" class="station red-line">
+                <input type="checkbox" name="station" id="livoberezhna" class="station red-line">
+                <input type="checkbox" name="station" id="darnitsa" class="station red-line">
+                <input type="checkbox" name="station" id="chernigivska" class="station red-line">
+                <input type="checkbox" name="station" id="lisova" class="station red-line">
+            </div>
+            <img src="./img/metro-legend.png" alt="map legend" class="map-legend">
+
+        </div>
+    </main>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
