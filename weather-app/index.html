@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="weather-wrapper">
+        <div class="img-wrapper">
+            <img src="./img/1.jpg" alt="">
+        </div>
+        <div class="icon-wrapper">
+            <img src="./img/gismeteo-icons/new/d_c1_s3_st.svg" alt="Weather in {{}}">
+            <h2 class="city-name">Город {{}}</h2>
+        </div>
+        <form class="search-form" id="search-form">
+            <input type="text" name="query" autocomplete="off" placeholder="Enter city..." />
+            <button type="submit" id="submit-btn">Search</button>
+        </form>
+
+        <div class="weather-info">
+            <p>Температура</p>
+            <ul class="temperature">
+                <li>Воздух: {{}}</li>
+                <li>Комфорт: {{}}</li>
+                <li>Вода: {{}}</li>
+            </ul>
+
+            <p class="description">Полное описание: {{}}</p>
+            <p class="humidity">Влажность: {{}}</p>
+            <p class="pressure">Атмосферное давление: {{}}</p>
+            <p class="cloudiness">Облачность: {{}}</p>
+            <p class="precipitation">Осадки: {{}}</p>
+            <p class="wind">Ветер: {{}}</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
