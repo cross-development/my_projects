@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "title": "CSS is strange",
+      "tag": "css",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Colder dev",
+      "id": 1
+    },
+    {
+      "title": "Redux is strange",
+      "tag": "redux",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Colder dev",
+      "id": 2
+    },
+    {
+      "title": "Is Babel cool?",
+      "tag": "babel",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Barmaley",
+      "id": 3
+    },
+    {
+      "title": "JavaScript in my life",
+      "tag": "javascript",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Koko-bongo",
+      "id": 4
+    },
+    {
+      "title": "ReactJS is react :)",
+      "tag": "react",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Colder dev",
+      "id": 6
+    },
+    {
+      "title": "ReactJS is react :)",
+      "tag": "react",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Colder dev",
+      "id": 7
+    },
+    {
+      "title": "ReactJS is react :)",
+      "tag": "react",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Colder dev",
+      "id": 8
+    },
+    {
+      "title": "ReactJS is react :)",
+      "tag": "react",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Colder dev",
+      "id": 9
+    }
+  ]
+}

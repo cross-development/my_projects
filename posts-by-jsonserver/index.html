@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="crud-panel">
+            <h2>Create your awesome post</h2>
+            <form id="create-form">
+                <label for="">Enter post title</label>
+                <input type="text" name="title" id="post-title" autocomplete="off">
+                <label for="">Enter post tag</label>
+                <input type="text" name="tag" id="post-tag" autocomplete="off">
+                <label for="">Enter post text</label>
+                <textarea name="text" id="post-text" cols="30" rows="10" maxlength="400"
+                    placeholder="Leave your message.." autocomplete="off"></textarea>
+                <label for="">Enter author name</label>
+                <input type="text" name="author" id="post-author" autocomplete="off">
+                <button type="submit">Create</button>
+            </form>
+        </section>
+
+        <section class="tag-panel">
+            <div class="tags js-tags">
+                <button class="tags__item" data-tag="html">HTML</button>
+                <button class="tags__item" data-tag="css">CSS</button>
+                <button class="tags__item" data-tag="javascript">JavaScript</button>
+                <button class="tags__item" data-tag="npm">NPM</button>
+                <button class="tags__item" data-tag="babel">Babel</button>
+                <button class="tags__item" data-tag="webpack">Webpack</button>
+                <button class="tags__item" data-tag="react">React</button>
+                <button class="tags__item" data-tag="redux">Redux</button>
+                <button class="tags__item" data-tag="node">Node</button>
+            </div>
+
+            <div class="posts-feed">
+                <ul class="posts-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
