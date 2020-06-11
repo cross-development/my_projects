@@ -1,0 +1,176 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-aurek1 {
+  width: 43px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-besh {
+  width: 41px;
+  height: 32px;
+  background-position: -64px 0;
+}
+.icon-cherek {
+  width: 39px;
+  height: 32px;
+  background-position: -128px 0;
+}
+.icon-cresh {
+  width: 24px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.icon-dorn {
+  width: 35px;
+  height: 32px;
+  background-position: -256px 0;
+}
+.icon-enth {
+  width: 36px;
+  height: 32px;
+  background-position: -320px 0;
+}
+.icon-esk {
+  width: 39px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-forn {
+  width: 45px;
+  height: 32px;
+  background-position: -448px 0;
+}
+.icon-grek {
+  width: 39px;
+  height: 32px;
+  background-position: -512px 0;
+}
+.icon-herf {
+  width: 43px;
+  height: 32px;
+  background-position: -576px 0;
+}
+.icon-isk {
+  width: 16px;
+  height: 32px;
+  background-position: -640px 0;
+}
+.icon-jenth {
+  width: 43px;
+  height: 32px;
+  background-position: -704px 0;
+}
+.icon-krenth {
+  width: 34px;
+  height: 32px;
+  background-position: -768px 0;
+}
+.icon-krill {
+  width: 36px;
+  height: 32px;
+  background-position: -832px 0;
+}
+.icon-leth {
+  width: 25px;
+  height: 32px;
+  background-position: -896px 0;
+}
+.icon-mern {
+  width: 25px;
+  height: 32px;
+  background-position: -960px 0;
+}
+.icon-nen {
+  width: 34px;
+  height: 32px;
+  background-position: -1024px 0;
+}
+.icon-nern {
+  width: 42px;
+  height: 32px;
+  background-position: -1088px 0;
+}
+.icon-onith {
+  width: 40px;
+  height: 32px;
+  background-position: -1152px 0;
+}
+.icon-orenth {
+  width: 29px;
+  height: 32px;
+  background-position: -1216px 0;
+}
+.icon-osk {
+  width: 41px;
+  height: 32px;
+  background-position: -1280px 0;
+}
+.icon-peth {
+  width: 26px;
+  height: 32px;
+  background-position: -1344px 0;
+}
+.icon-qek {
+  width: 36px;
+  height: 32px;
+  background-position: -1408px 0;
+}
+.icon-resh {
+  width: 35px;
+  height: 32px;
+  background-position: -1472px 0;
+}
+.icon-senth {
+  width: 42px;
+  height: 32px;
+  background-position: -1536px 0;
+}
+.icon-shen {
+  width: 47px;
+  height: 32px;
+  background-position: -1600px 0;
+}
+.icon-thesh {
+  width: 36px;
+  height: 32px;
+  background-position: -1664px 0;
+}
+.icon-trill {
+  width: 43px;
+  height: 32px;
+  background-position: -1728px 0;
+}
+.icon-usk {
+  width: 36px;
+  height: 32px;
+  background-position: -1792px 0;
+}
+.icon-vev {
+  width: 29px;
+  height: 32px;
+  background-position: -1856px 0;
+}
+.icon-wesk {
+  width: 43px;
+  height: 32px;
+  background-position: -1920px 0;
+}
+.icon-xesh {
+  width: 35px;
+  height: 32px;
+  background-position: 0 -64px;
+}
+.icon-yirt {
+  width: 35px;
+  height: 32px;
+  background-position: -64px -64px;
+}
+.icon-zerek {
+  width: 36px;
+  height: 32px;
+  background-position: -128px -64px;
+}
+
