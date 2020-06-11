@@ -2,59 +2,73 @@
   "posts": [
     {
       "title": "CSS is strange",
-      "tag": "css",
+      "tag": "#css",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
       "author": "Colder dev",
       "id": 1
     },
     {
       "title": "Redux is strange",
-      "tag": "redux",
+      "tag": "#redux",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
       "author": "Colder dev",
       "id": 2
     },
     {
       "title": "Is Babel cool?",
-      "tag": "babel",
+      "tag": "#babel",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
       "author": "Barmaley",
       "id": 3
     },
     {
-      "title": "JavaScript in my life",
-      "tag": "javascript",
+      "title": "Is Babel cool?",
+      "tag": "#babel",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
-      "author": "Koko-bongo",
+      "author": "Barmaley",
       "id": 4
     },
     {
+      "title": "Is javascript cool?",
+      "tag": "#javascript",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
+      "author": "Ololo",
+      "id": 5
+    },
+    {
       "title": "ReactJS is react :)",
-      "tag": "react",
+      "tag": "#react",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
       "author": "Colder dev",
       "id": 6
     },
     {
       "title": "ReactJS is react :)",
-      "tag": "react",
-      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
-      "author": "Colder dev",
-      "id": 7
-    },
-    {
-      "title": "ReactJS is react :)",
-      "tag": "react",
+      "tag": "#react",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
       "author": "Colder dev",
       "id": 8
     },
     {
       "title": "ReactJS is react :)",
-      "tag": "react",
+      "tag": "#react",
       "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut rerum sed, dolor dolorum quidem? Earum, quia! Accusamus quis corrupti, incidunt alias fugit laboriosam beatae. Voluptates iure cupiditate iste, pariatur commodi aperiam veritatis distinctio repudiandae magnam eveniet tenetur. Perferendis hic at quas nulla, odit rem voluptatum amet itaque repellendus eaque.",
       "author": "Colder dev",
       "id": 9
+    },
+    {
+      "title": "HTML is not a programming language",
+      "tag": "#html",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo aspernatur ad ipsa quibusdam? Dignissimos sapiente aliquid enim animi vel accusantium atque illum ab, architecto voluptas earum dolore veritatis provident debitis autem amet nihil. Assumenda quaerat nemo eos voluptatum cumque laudantium similique distinctio, non, maxime, dicta facilis? Aspernatur facilis veniam consequuntur.",
+      "author": "Vitaliy",
+      "id": 10
+    },
+    {
+      "title": "NPM: how it's work",
+      "tag": "#npm",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure culpa perferendis atque earum aspernatur! Debitis commodi ipsum enim amet voluptatibus alias labore laborum dolorem, praesentium repellendus nisi doloribus molestias mollitia. Doloribus obcaecati natus facere! Praesentium perferendis eveniet, mollitia porro minima delectus laboriosam, distinctio impedit magni, at quia illum possimus ra",
+      "author": "Bublik",
+      "id": 11
     }
   ]
 }

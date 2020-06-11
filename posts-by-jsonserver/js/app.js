@@ -28,9 +28,20 @@ function handleTagClick(e) {
   }
 
   const element = e.target;
-  element.classList.toggle('tags__link--active');
   const tag = element.dataset.tag;
-  return tag;
+  element.classList.toggle('tags__link--active');
+
+  if (element.classList.contains('tags__link--active')) {
+    return tag;
+  }
+
+  document.querySelectorAll('.tag-list__item').forEach(elem => {
+    if (elem.textContent === `${tag}`) {
+      elem.closest('.posts-list__item').remove();
+    } else {
+      return;
+    }
+  });
 }
 
 async function fetchPosts() {
@@ -55,7 +66,7 @@ function renderData(dataToRender) {
     return;
   }
 
-  refs.postList.insertAdjacentHTML('beforeend', markup);
+  refs.postList.insertAdjacentHTML('afterbegin', markup);
 }
 
 function handleFormSubmit(e) {
